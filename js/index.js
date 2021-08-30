@@ -93,18 +93,21 @@ const mainImage = document.querySelector('.middle-img');
 mainImage.setAttribute('src', siteContent['main-content']['middle-img-src']);
 
 //Services Text
-const services = document.querySelector('.bottom-content .text-content');
-const servicesHead = services.querySelector('h4');
-servicesHead.textContent = siteContent['main-content']['services-h4'];
+// const services = contentBlock2.nextElementSibling;
+// const servicesHead = services.querySelector('h4');
+// servicesHead.textContent = siteContent['main-content']['services-h4'];
+// const services = document.querySelector('.bottom-content', '.text-content');
+// const servicesHead = services.querySelector('h4');
+// servicesHead.textContent = siteContent['main-content']['services-h4'];
 
-const servicesBody = services.querySelector('p');
-servicesBody.textContent = siteContent['main-content']['services-content'];
-//Products Text
+// const servicesBody = services.querySelector('p');
+// servicesBody.textContent = siteContent['main-content']['services-content'];
+// // Products Text
 // const products = services.nextElementSibling;
-// const productHead = contentBlock2.querySelector('h4');
+// const productHead = products.querySelector('h4');
 // productHead.textContent = siteContent['main-content']['product-h4'];
 
-// const productBody = contentBlock2.querySelector('p');
+// const productBody = products.querySelector('p');
 // productBody.textContent = siteContent['main-content']['product-content'];
 //Visions Text
 
@@ -113,9 +116,13 @@ const contactSection = document.querySelector('.contact');
 const contactHeader = contactSection.querySelector('h4');
 contactHeader.textContent = siteContent['contact']['contact-h4'];
 
-const address = contactSection.querySelector('p');
-address.textContent = siteContent['contact']['address'];
-const phone = contactSection.querySelector('p');
+contactSection.querySelector('p').innerHTML = '123 Way 456 Street <br> Somewhere, USA'
+const phone = contactSection.querySelector('p').nextElementSibling;
 phone.textContent = siteContent['contact']['phone'];
-const email = contactSection.querySelector('p');
+const email = phone.nextElementSibling;
 email.textContent = siteContent['contact']['email'];
+
+//Footer Section
+const bottomFooter = document.querySelector('footer');
+const copyright = bottomFooter.querySelector('p');
+copyright.textContent = siteContent['footer']['copyright'];
