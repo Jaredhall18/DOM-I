@@ -52,11 +52,21 @@ const navText5 = navText4.nextElementSibling;
 const navText6 = navText5.nextElementSibling;
 //Linking variables for each Anchor tag to Objects within siteContent Array
 navText1.textContent = siteContent['nav']['nav-item-1'];
+navText1.style.color = 'green';
 navText2.textContent = siteContent['nav']['nav-item-2'];
+navText2.style.color = 'green';
 navText3.textContent = siteContent['nav']['nav-item-3'];
+navText3.style.color = 'green';
 navText4.textContent = siteContent['nav']['nav-item-4'];
+navText4.style.color = 'green';
 navText5.textContent = siteContent['nav']['nav-item-5'];
+navText5.style.color = 'green';
 navText6.textContent = siteContent['nav']['nav-item-6'];
+navText6.style.color = 'green';
+
+//Change color to Green
+// const navColor = document.querySelectorAll('a');
+// navColor.style.color = 'green';
 
 
 // Call to Action Content Block
