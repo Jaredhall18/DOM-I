@@ -64,9 +64,19 @@ navText5.style.color = 'green';
 navText6.textContent = siteContent['nav']['nav-item-6'];
 navText6.style.color = 'green';
 
-//Change color to Green
-// const navColor = document.querySelectorAll('a');
-// navColor.style.color = 'green';
+
+//Append and Prepend new Nav Options
+const news = document.createElement('a');
+news.textContent = 'News';
+news.href = '#';
+document.querySelector('nav').append(news);
+news.style.color = "green";
+
+const blog = document.createElement('a');
+blog.textContent = 'Blog';
+blog.href = '#';
+document.querySelector('nav').prepend(blog);
+blog.style.color = "green";
 
 
 // Call to Action Content Block
